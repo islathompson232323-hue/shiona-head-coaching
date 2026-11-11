@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Head &amp; Heart Coaching with Shiona | Clarity, confidence and courage</title>
+<meta name="description" content="Real conversations. Practical tools. Meaningful change. Coaching with Shiona Head.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@300;400;600&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f1a17;--bg2:#16251f;--ink:#f3f1ec;--mute:#9bb2a8;--line:rgba(232,165,163,.18);--acc:#e8a5a3;--sage:#8fb5a1;--gold:#f0d9a0;--ease:cubic-bezier(.16,1,.3,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{background:var(--bg);color:var(--ink);font:300 17px/1.75 'Nunito Sans',system-ui,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.d{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;letter-spacing:-.02em;line-height:.95}
+.sc{font-family:'Mrs Saint Delafield',cursive;font-weight:400;letter-spacing:0;color:var(--acc)}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--acc);outline-offset:4px}
+body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:90;opacity:.06;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.cur,.dot{position:fixed;top:0;left:0;pointer-events:none;z-index:100;border-radius:50%;display:none}
+.cur{width:44px;height:44px;margin:-22px 0 0 -22px;border:1px solid var(--acc);transition:width .4s var(--ease),height .4s var(--ease),margin .4s var(--ease),background .3s}
+.dot{width:6px;height:6px;margin:-3px 0 0 -3px;background:var(--acc)}
+.cur.big{width:84px;height:84px;margin:-42px 0 0 -42px;background:rgba(232,165,163,.1)}
+@media (hover:hover) and (pointer:fine){.cur,.dot{display:block}body,a,button{cursor:none}}
+.glow{position:fixed;width:540px;height:540px;margin:-270px 0 0 -270px;top:0;left:0;pointer-events:none;z-index:1;background:radial-gradient(circle,rgba(240,217,160,.08),transparent 65%)}
+nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:80;display:flex;align-items:center;gap:30px;padding:8px 26px;border:1px solid var(--line);border-radius:99px;background:rgba(15,26,23,.5);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);transition:transform .6s var(--ease)}
+nav.hide{transform:translate(-50%,-140%)}
+nav b{font:400 30px/1 'Mrs Saint Delafield',cursive;color:var(--acc);white-space:nowrap}
+nav .l{display:flex;gap:22px;font-size:13px;color:var(--mute)}
+nav .l a:hover{color:var(--ink)}
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;padding:18px 36px;border-radius:99px;border:1px solid var(--acc);color:var(--ink);font-weight:600;font-size:15px;overflow:hidden;transition:box-shadow .5s,color .4s,transform .3s var(--ease);will-change:transform}
+.btn::before{content:"";position:absolute;inset:0;background:var(--acc);transform:translateY(101%);transition:transform .6s var(--ease);border-radius:inherit}
+.btn:hover::before{transform:none}
+.btn:hover{color:#2a1514;box-shadow:0 0 60px rgba(232,165,163,.4)}
+.btn span{position:relative}
+.btn.xl{padding:26px 54px;font-size:18px}
+/* hero */
+.hero{position:relative;min-height:100svh;display:grid;align-content:center;padding:130px 6vw 90px;overflow:hidden;isolation:isolate}
+.dawn{position:absolute;z-index:-2;left:50%;bottom:-45vh;width:120vw;height:120vw;max-width:1600px;max-height:1600px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle at 50% 25%,rgba(240,217,160,.5),rgba(232,165,163,.2) 33%,rgba(143,181,161,.14) 55%,transparent 70%);filter:blur(30px);animation:fade 4s var(--ease) both}
+@keyframes fade{from{opacity:0}}
+#pc,#pc2{position:absolute;inset:0;z-index:-1;width:100%;height:100%}
+.ring{position:absolute;z-index:-1;border:1px solid var(--line);border-radius:50%;will-change:transform}
+.ring.a{width:min(60vw,640px);aspect-ratio:1;right:-10vw;top:12vh}
+.ring.b{width:min(30vw,320px);aspect-ratio:1;left:5vw;bottom:8vh;border-color:rgba(143,181,161,.25)}
+.hero h1{font-size:clamp(3.6rem,12vw,12rem);max-width:12ch;line-height:.92}
+.line{display:block;overflow:hidden;padding:.04em 0 .1em}
+.line>span{display:inline-block;transform:translateY(115%) rotate(3deg);transition:transform 1.5s var(--ease)}
+.in .line>span,.line.in>span{transform:none}
+.hero .l2 span{transition-delay:.12s}.hero .l3 span{transition-delay:.24s}
+.hero h1 em{color:var(--acc);font-style:italic}
+.sub{display:flex;flex-wrap:wrap;gap:30px 60px;align-items:end;justify-content:space-between;margin-top:6vh;opacity:0;transform:translateY(20px);transition:all 1.4s var(--ease) .8s}
+.in .sub{opacity:1;transform:none}
+.sub p{max-width:38ch;color:#d4ded8;font-size:1.05rem}
+.sub p b{display:block;font:400 1.9rem/1.1 'Mrs Saint Delafield',cursive;color:var(--gold);margin-bottom:6px}
+/* statement */
+.stmt{padding:22vh 6vw 16vh}
+.stmt p{font:500 clamp(2.4rem,7vw,7.2rem)/1 'Cormorant Garamond',serif;letter-spacing:-.025em;max-width:14ch}
+.stmt p span{opacity:.14;filter:blur(3px);transition:opacity .5s,filter .5s}
+.stmt p span.on{opacity:1;filter:none}
+.stmt small{display:block;margin:6vh 0 0 auto;max-width:38ch;color:var(--mute);font-size:1rem}
+/* horizontal */
+.hs{position:relative;height:520vh}
+.hs .stick{position:sticky;top:0;height:100svh;overflow:hidden;display:flex;align-items:center}
+.hs .head{position:absolute;top:13vh;left:6vw;z-index:2}
+.hs .head .sc{font-size:clamp(2.4rem,4vw,3.4rem);display:block;line-height:1}
+.hs .bar{display:block;width:90px;height:1px;background:var(--line);margin-top:16px;position:relative}
+.hs .bar::after{content:"";position:absolute;inset:0;background:var(--acc);transform-origin:left;transform:scaleX(var(--p,0))}
+.track{display:flex;gap:6vw;padding:14vh 6vw 0;will-change:transform}
+.pan{flex:0 0 min(80vw,960px);height:62vh;position:relative;perspective:1200px}
+.pan h2{font-size:clamp(3.2rem,9vw,9rem);position:absolute;left:0;top:0;z-index:2;max-width:7ch}
+.pan .vis{position:absolute;right:0;top:4%;width:42%;height:84%;border-radius:200px 200px 22px 22px;border:1px solid var(--line);overflow:hidden;transform-style:preserve-3d;transition:transform .3s}
+.pan .vis::before{content:"";position:absolute;inset:-20%;background:var(--g);filter:blur(12px);transform:translate3d(var(--px,0),var(--py,0),0) scale(1.1);transition:transform .6s var(--ease)}
+.pan .vis::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(15,26,23,.75))}
+.pan p{position:absolute;left:0;bottom:0;z-index:2;max-width:28ch;color:#d4ded8;font-size:1.1rem}
+/* reset group */
+.rg{padding:18vh 6vw;display:grid;grid-template-columns:.9fr 1.1fr;gap:6vw;background:linear-gradient(180deg,var(--bg),var(--bg2) 30%,var(--bg2) 80%,var(--bg))}
+.rg .lt{position:sticky;top:16vh;align-self:start}
+.rg .lt .sc{font-size:clamp(2.4rem,4vw,3.4rem);display:block;margin-bottom:10px}
+.rg h2{font-size:clamp(3.4rem,8vw,8.4rem);margin-bottom:5vh}
+.rg h2 em{font-style:italic;color:var(--acc)}
+.rg .when{display:flex;gap:34px;flex-wrap:wrap;align-items:end;margin-bottom:5vh}
+.rg .when div{font-size:.95rem;color:var(--mute)}
+.rg .when b{display:block;font:500 clamp(2rem,3.6vw,3.4rem)/1 'Cormorant Garamond',serif;color:var(--ink)}
+.rg .lt p{color:#d4ded8;max-width:36ch;margin-bottom:5vh}
+.rg ol{list-style:none;counter-reset:s}
+.rg li{counter-increment:s;padding:34px 0 34px 74px;border-top:1px solid var(--line);position:relative;opacity:.35;filter:blur(2px);transition:opacity .9s var(--ease),filter .9s var(--ease),transform .7s var(--ease),border-color .4s}
+.rg li::before{content:counter(s);position:absolute;left:0;top:26px;width:46px;height:46px;border-radius:50%;border:1px solid var(--acc);display:grid;place-items:center;font:500 1.3rem 'Cormorant Garamond',serif;color:var(--acc)}
+.rg li.on{opacity:1;filter:none}
+.rg li:last-child{border-bottom:1px solid var(--line)}
+.rg li:hover{transform:translateX(16px);border-color:var(--acc)}
+.rg h3{font-size:clamp(1.8rem,3vw,2.8rem);margin-bottom:8px}
+.rg li p{color:var(--mute);max-width:42ch}
+/* community */
+.cm{padding:20vh 6vw;position:relative;overflow:hidden}
+.cm .big{font:500 clamp(5rem,21vw,23rem)/.8 'Cormorant Garamond',serif;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1px rgba(232,165,163,.4);white-space:nowrap;will-change:transform}
+.cm .cols{display:grid;grid-template-columns:1fr 1fr;gap:6vw;margin-top:-3vw;position:relative}
+.cm h2{font-size:clamp(2.6rem,5.4vw,5.4rem)}
+.cm p{color:var(--mute);max-width:44ch}
+.cm p+p{margin-top:18px}
+.cm .sc{font-size:2.4rem}
+/* final */
+.fin{position:relative;min-height:110svh;display:grid;place-items:center;text-align:center;padding:16vh 6vw;overflow:hidden;isolation:isolate}
+.fin .dawn{bottom:auto;top:auto;bottom:-55vh;animation:none}
+.fin h2{font-size:clamp(3.4rem,12.5vw,13rem);margin-bottom:6vh;line-height:.92}
+.fin h2 em{font-style:italic;color:var(--acc)}
+.fin p{max-width:42ch;margin:0 auto 5vh;color:#d4ded8;font-size:1.1rem}
+.fin .sc{display:block;font-size:2.6rem;margin-top:6vh}
+footer{padding:28px 6vw;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;color:var(--mute);font-size:13px;border-top:1px solid var(--line)}
+.rv{opacity:0;transform:translateY(60px) scale(.97);filter:blur(10px);transition:all 1.3s var(--ease)}
+.rv.on{opacity:1;transform:none;filter:none}
+@media (max-width:800px){
+nav .l{display:none}nav{padding:8px 24px}
+.hs{height:auto}.hs .stick{position:static;height:auto;display:block;padding:12vh 0 6vh}
+.hs .head{position:static;padding:0 6vw 8vh}.track{flex-direction:column;gap:12vh;padding:0 6vw;transform:none!important}
+.pan{flex:none;width:100%;height:auto}
+.pan h2{position:static;font-size:clamp(3.2rem,16vw,5.4rem);max-width:none}
+.pan .vis{position:relative;width:100%;height:38vh;margin:4vh 0}
+.pan p{position:static}
+.rg{grid-template-columns:1fr}.rg .lt{position:static}.rg li{opacity:1;filter:none}
+.cm .cols{grid-template-columns:1fr;margin-top:6vw}
+.ring.a{opacity:.5}
+}
+@media (prefers-reduced-motion:reduce){
+*{animation:none!important;transition:none!important}
+.line>span,.rv,.sub{transform:none!important;opacity:1!important;filter:none!important}
+.stmt p span,.rg li{opacity:1!important;filter:none!important}
+.hs{height:auto}.hs .stick{position:static;height:auto;display:block;padding:12vh 0}.track{flex-direction:column;transform:none!important;padding:0 6vw}.pan{height:auto;flex:none;width:100%}.pan h2,.pan .vis,.pan p{position:static}.pan .vis{width:100%;height:38vh}
+}
+</style>
+</head>
+<body>
+<div class="cur" aria-hidden="true"></div><div class="dot" aria-hidden="true"></div><div class="glow" aria-hidden="true"></div>
+
+<nav id="nav" aria-label="Main">
+  <b>Head &amp; Heart</b>
+  <div class="l"><a href="#about">Approach</a><a href="#pillars">What you gain</a><a href="#reset">Parent Reset</a><a href="#community">Community</a></div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="dawn" data-px=".04"></div>
+  <canvas id="pc" aria-hidden="true"></canvas>
+  <div class="ring a" data-px="-.03"></div><div class="ring b" data-px=".05"></div>
+  <h1><span class="line l1"><span>Find clarity,</span></span><span class="line l2"><span>confidence</span></span><span class="line l3"><span>and <em>courage.</em></span></span></h1>
+  <div class="sub">
+    <p><b>with Shiona</b>Head &amp; Heart Coaching. Helping you find clarity, confidence and courage to create meaningful change.</p>
+    <a class="btn xl mag cta" href="#"><span>Find Shiona on Facebook</span></a>
+  </div>
+</header>
+
+<section class="stmt" id="about">
+  <p id="st">Real conversations. Practical tools. Meaningful change.</p>
+  <small class="rv">#Courage2Change: a coaching space where you can be heard, grow with self-compassion, and create change that lasts.</small>
+</section>
+
+<section class="hs" id="pillars" aria-label="What you gain">
+  <div class="stick">
+    <div class="head"><span class="sc">What you’ll find here</span><i class="bar"></i></div>
+    <div class="track" id="trk">
+      <article class="pan"><h2>Be heard.</h2><div class="vis" style="--g:radial-gradient(circle at 30% 70%,#e8a5a3,transparent 55%),radial-gradient(circle at 70% 20%,#8fb5a1,transparent 60%)"></div><p>Be understood. A place where your story is listened to first.</p></article>
+      <article class="pan"><h2>Gain clarity.</h2><div class="vis" style="--g:radial-gradient(circle at 70% 70%,#f0d9a0,transparent 55%),radial-gradient(circle at 20% 20%,#4d7a68,transparent 60%)"></div><p>Build confidence. See what matters and take the next step with certainty.</p></article>
+      <article class="pan"><h2>Create change.</h2><div class="vis" style="--g:radial-gradient(circle at 50% 80%,#8fb5a1,transparent 55%),radial-gradient(circle at 30% 20%,#f0d9a0,transparent 55%)"></div><p>Change that lasts, built from practical tools you can use in daily life.</p></article>
+      <article class="pan"><h2>Grow gently.</h2><div class="vis" style="--g:radial-gradient(circle at 40% 75%,#e8a5a3,transparent 50%),radial-gradient(circle at 70% 25%,#35594b,transparent 60%)"></div><p>Grow with self-compassion. Progress without the pressure to be perfect.</p></article>
+      <article class="pan"><h2>Not alone.</h2><div class="vis" style="--g:radial-gradient(circle at 60% 70%,#f0d9a0,transparent 50%),radial-gradient(circle at 25% 25%,#e8a5a3,transparent 60%)"></div><p>A supportive community of people on the same road.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="rg" id="reset">
+  <div class="lt">
+    <span class="sc rv">The Parent Reset Group</span>
+    <h2 class="rv">Done, <em>not perfect.</em></h2>
+    <div class="when rv"><div><b>Sun 15 Nov</b>8am start</div><div><b>£180</b>6 group sessions</div></div>
+    <p class="rv">Six sessions to help you enjoy Christmas with energy left for you. Merry, not martyr: Christmas includes you too. Includes private peer support chat between sessions.</p>
+    <a class="btn mag cta rv" href="#"><span>Join via Facebook</span></a>
+  </div>
+  <ol>
+    <li><h3>What matters and what is enough</h3><p>Simplify the Christmas pressure and decide what really matters.</p></li>
+    <li><h3>Find your pause</h3><p>Notice overload sooner and practise responding more calmly.</p></li>
+    <li><h3>Let go of perfect</h3><p>Challenge the shoulds, guilt and impossible expectations.</p></li>
+    <li><h3>Boundaries and delegation</h3><p>Say what you need and share the planning as well as the jobs.</p></li>
+    <li><h3>A pace you can sustain</h3><p>Make room for rest and your own enjoyment.</p></li>
+    <li><h3>Your Christmas plan</h3><p>Bring it together with a realistic plan for the holidays.</p></li>
+  </ol>
+</section>
+
+<section class="cm" id="community">
+  <div class="big" id="big">Hearts</div>
+  <div class="cols">
+    <div class="rv"><span class="sc">Head &amp; Hearts Community</span><h2>A safe space to connect, grow and thrive together.</h2></div>
+    <div class="rv"><p>Alongside one-to-one and group coaching, Shiona hosts a private community of more than a hundred members, built on honest conversation and mutual support.</p><p>#humanhearts</p></div>
+  </div>
+</section>
+
+<section class="fin" id="connect">
+  <div class="dawn" data-px="-.05"></div>
+  <canvas id="pc2" aria-hidden="true"></canvas>
+  <div>
+    <h2><span class="line"><span>Courage starts</span></span><span class="line"><span><em>with a conversation.</em></span></span></h2>
+    <p class="rv">Say hello to Shiona on Facebook and take the first step toward meaningful change.</p>
+    <a class="btn xl mag cta rv" href="#"><span>Find Shiona on Facebook</span></a>
+    <span class="sc rv">#Courage2Change</span>
+  </div>
+</section>
+<footer><span>© Head &amp; Heart Coaching with Shiona</span><span>Real conversations. Practical tools. Meaningful change.</span></footer>
+
+<script>
+(()=>{
+// Set Shiona's exact Facebook profile link here. Until then, buttons open a Facebook search for her name.
+const FB='https://www.facebook.com/search/top?q=Shiona%20Head%20Head%20%26%20Heart%20Coaching';
+const $=(s,e=document)=>e.querySelector(s),$$=(s,e=document)=>[...e.querySelectorAll(s)];
+$$('.cta').forEach(a=>{a.href=FB;a.target='_blank';a.rel='noopener'});
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches,fine=matchMedia('(hover:hover) and (pointer:fine)').matches,mob=innerWidth<800;
+const clamp=(v,a=0,b=1)=>Math.min(b,Math.max(a,v));
+requestAnimationFrame(()=>setTimeout(()=>$('.hero').classList.add('in'),150));
+const st=$('#st');st.innerHTML=st.textContent.split(' ').map(w=>`<span>${w}</span>`).join(' ');
+const words=$$('#st span');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');if(e.target.classList.contains('line'))e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.2});
+$$('.rv,.rg li,.fin .line').forEach(e=>io.observe(e));
+const cur=$('.cur'),dot=$('.dot'),glow=$('.glow');let mx=innerWidth/2,my=innerHeight/2,cx=mx,cy=my,nx=0,ny=0;
+if(fine&&!rm){
+ addEventListener('pointermove',e=>{mx=e.clientX;my=e.clientY;nx=mx/innerWidth-.5;ny=my/innerHeight-.5;dot.style.transform=`translate(${mx}px,${my}px)`});
+ $$('a,button').forEach(el=>{el.addEventListener('pointerenter',()=>cur.classList.add('big'));el.addEventListener('pointerleave',()=>cur.classList.remove('big'))});
+ $$('.mag').forEach(el=>{
+  el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect();el.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.22}px,${(e.clientY-r.top-r.height/2)*.32}px)`});
+  el.addEventListener('pointerleave',()=>el.style.transform='');
+ });
+ $$('.pan').forEach(p=>{const v=$('.vis',p);p.addEventListener('pointermove',e=>{const r=v.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;v.style.transform=`rotateY(${x*14}deg) rotateX(${-y*14}deg)`;v.style.setProperty('--px',x*-40+'px');v.style.setProperty('--py',y*-40+'px')});p.addEventListener('pointerleave',()=>{v.style.transform='';v.style.setProperty('--px','0px');v.style.setProperty('--py','0px')})});
+}
+function petals(c,n,up){
+ const x=c.getContext('2d');let w,h,P=[];const dpr=Math.min(devicePixelRatio,2);
+ const rs=()=>{w=c.width=c.offsetWidth*dpr;h=c.height=c.offsetHeight*dpr};rs();addEventListener('resize',rs);
+ for(let i=0;i<n;i++)P.push({x:Math.random(),y:Math.random(),r:Math.random()*2.6+1,s:Math.random()*.00022+.00007,a:Math.random()*.45+.15,d:Math.random(),ph:Math.random()*6});
+ let vis=true;new IntersectionObserver(e=>vis=e[0].isIntersecting).observe(c);let t=0;
+ (function f(){if(vis){t+=.01;x.clearRect(0,0,w,h);P.forEach(p=>{p.y+=(up?-1:1)*p.s*16;if(p.y>1.03)p.y=-.03;if(p.y<-.03)p.y=1.03;const ox=nx*p.d*40*dpr+Math.sin(t+p.ph)*14*dpr;x.beginPath();x.ellipse(p.x*w+ox,p.y*h,p.r*dpr,p.r*dpr*.6,t+p.ph,0,7);x.fillStyle=up?`rgba(240,217,160,${p.a})`:`rgba(232,165,163,${p.a})`;x.fill()})}if(!rm)requestAnimationFrame(f)})();
+}
+petals($('#pc'),mob?20:55,false);petals($('#pc2'),mob?18:45,true);
+const nav=$('#nav'),hs=$('.hs'),trk=$('#trk'),hd=$('.hs .head'),big=$('#big'),px=$$('[data-px]');let ly=0,tk=false;
+function frame(){
+ const y=scrollY,vh=innerHeight;
+ nav.classList.toggle('hide',y>ly&&y>300);ly=y;
+ const sr=$('.stmt').getBoundingClientRect(),sp=clamp((vh*.85-sr.top)/(vh*.55));
+ words.forEach((w,i)=>w.classList.toggle('on',i/words.length<sp*1.05));
+ if(innerWidth>800&&!rm){const r=hs.getBoundingClientRect(),p=clamp(-r.top/(r.height-vh)),max=trk.scrollWidth-innerWidth+innerWidth*.06;trk.style.transform=`translate3d(${-p*max}px,0,0)`;hd.style.setProperty('--p',p)}
+ const ar=big.getBoundingClientRect();big.style.transform=`translate3d(${(ar.top/vh-.5)*-14}vw,0,0)`;
+ px.forEach(e=>{const r=e.getBoundingClientRect();if(r.bottom>0&&r.top<vh){const k=parseFloat(e.dataset.px),b=e.classList.contains('dawn')?'translateX(-50%) ':'';e.style.transform=b+`translate3d(${nx*80*k*10}px,${y*-k+ny*60*k*10}px,0)`}});
+ tk=false;
+}
+addEventListener('scroll',()=>{if(!tk){tk=true;requestAnimationFrame(frame)}},{passive:true});
+(function loop(){cx+=(mx-cx)*.14;cy+=(my-cy)*.14;if(fine){cur.style.transform=`translate(${cx}px,${cy}px)`;glow.style.transform=`translate(${cx}px,${cy}px)`}if(!rm)frame();requestAnimationFrame(loop)})();
+frame();
+})();
+</script>
+</body>
+</html>
